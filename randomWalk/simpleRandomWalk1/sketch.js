@@ -24,7 +24,7 @@ function setup(){
 function draw(){
 
     stroke(`rgba(${floor(x+y/2)},${x},${y},0.25)`);
-    if(x == 0 || x == 400 || y == 0 || y == 400){
+    if(x == 0 || x == width || y == 0 || y == height){
         stroke(`red`);
     }
 
