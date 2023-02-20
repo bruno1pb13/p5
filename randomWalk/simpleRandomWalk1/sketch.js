@@ -5,13 +5,13 @@ var step = 0
 var walkerWeight = 5
 var stepHist = [];
 
-//Screen size
-var width = 400;
-var height = 400;
 
 
 function setup(){
 
+    //Screen size
+    var width = 400;
+    var height = 400;
 
     createCanvas(width, height);
     frameRate(60)
