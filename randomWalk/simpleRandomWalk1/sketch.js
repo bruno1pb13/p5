@@ -5,13 +5,20 @@ var step = 0
 var walkerWeight = 5
 var stepHist = [];
 
+//Screen size
+var width = 400;
+var height = 400;
+
+
 function setup(){
-    createCanvas(400, 400);
+
+
+    createCanvas(width, height);
     frameRate(60)
     background(51);
     
-    x = 200;
-    y = 200;
+    x = round(width / 2);
+    y = round(height / 2);
 }
 
 function draw(){
@@ -53,6 +60,7 @@ function StepsHistory(stepDir){
     step ++
 
     if(stepHist.length > 4){
+        //Armazena somente os ultimos 4 movimentos no historico. 
         stepHist.shift()
     }
 
