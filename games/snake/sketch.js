@@ -31,7 +31,7 @@ function setup(){
         y : round(height / 2)
     })
 
-    updateState('play')
+    updateState('press any direction to start')
 
 }
 
