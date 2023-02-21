@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bruno Santos">
+    <meta name="keywords" content="p5, js, snake, agame">
+    <title>Snake - Bruno Santos</title>
+</head>
+<style>
+    table{
+        border: 1px solid black
+    }
+
+    tr{
+        text-align: left;
+    }
+
+    td{
+        padding-left: 1em;
+    }
+    
+</style>
+<body>
+    <table>
+        <tr>
+            <th>High score</th>
+            <td id="highScore"></td>
+        </tr>
+        <tr>
+            <th>Score</th>
+            <td id="score"></td>
+        </tr>
+        <tr>
+            <th>State</th>
+            <td id="state"></td>
+        </tr>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js" integrity="sha512-WJXVjqeINVpi5XXJ2jn0BSCfp0y80IKrYh731gLRnkAS9TKc5KNt/OfLtu+fCueqdWniouJ1ubM+VI/hbo7POQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./sketch.js"></script>
+    <script src="./utils/updateState.js"></script>
+    <script src="./utils/keybind.js"></script>
+
+</body>
+</html>
